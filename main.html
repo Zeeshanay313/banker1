@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banker.</title>
+ <!-- 1. Bootstrap core CSS -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+
+<!-- 2. Bootstrap Icons -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+/>
+
+<!-- 3. Font Awesome (all styles, including brands) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<!-- 4. AOS animations -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+/>
+
+<!-- 5. Your custom overrides & layout styles -->
+<link
+  rel="stylesheet"
+  href="style.css"
+/>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Banker <span class="banker-dot">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#about">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#team">Team</a></li>
+              <li><a class="dropdown-item" href="#pricing">Pricing</a></li>
+              <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+              <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+              <li><a class="dropdown-item" href="#services">Services</a></li>
+              <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+              <li class="dropdown-submenu dropend">
+                <a class="dropdown-item dropdown-toggle" >More Links</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Menu One</a></li>
+                  <li><a class="dropdown-item" href="#">Menu Two</a></li>
+                  <li><a class="dropdown-item" href="#">Menu Three</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <ul class="navbar-nav social-icons ms-3">
+          <li class="nav-item"><a class="nav-link" href="#brand"><i class="fa-brands fa-twitter"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#brand"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#brand"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="home" style="background: linear-gradient(135deg, rgba(151, 120, 87, 0.6), rgba(0,0,0,1)), url('imgs/hero_2.jpg') center/cover no-repeat;">
+    <div class="hero-content active fade-in-up" data-slide="0" data-aos="fade-right">
+      <h1>BANKING SOLUTIONS</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div class="hero-content" data-slide="1">
+      <h1>FINANCING SOLUTIONS</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div class="hero-content" data-slide="2">
+      <h1>SAVINGS ACCOUNT</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div class="carousel-indicators" data-aos="fade-left" data-aos-delay="100">
+      <button type="button" class="active" data-slide="0"></button>
+      <button type="button" data-slide="1"></button>
+      <button type="button" data-slide="2"></button>
+    </div>
+    <div class="scroll-indicator" data-aos="fade-right">
+      <svg viewBox="0 0 24 52" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="22" height="50" rx="11" fill="none" stroke="#fff" stroke-width="2" opacity="0.8"/>
+        <circle class="scroll-dot" cx="12" cy="15" r="3" fill="#fff"/>
+      </svg>
+    </div>
+    
+  </section>
+
+  <section class="services-section"  data-aos="fade-right">
+    <div class="container">
+      <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5" >
+          <div class="service-card text-center">
+            <div class="service-icon">
+              <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="25" width="60" height="40" rx="5" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+                <rect x="22" y="27" width="56" height="36" rx="3" fill="#A0522D"/>
+                <rect x="30" y="35" width="15" height="8" rx="1" fill="#228B22"/>
+                <rect x="47" y="35" width="15" height="8" rx="1" fill="#32CD32"/>
+                <rect x="30" y="45" width="25" height="4" rx="1" fill="#FFD700"/>
+                <circle cx="70" cy="45" r="8" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+                <text x="70" y="49" text-anchor="middle" font-size="8" fill="#B8860B">$</text>
+              </svg>
+            </div>
+            <h3 class="service-title">Money Savings</h3>
+            <p class="service-description">A small river named Duden flows by their place.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="service-card text-center">
+            <div class="service-icon">
+              <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="30" width="45" height="25" rx="3" fill="#4169E1" stroke="#1E90FF" stroke-width="2"/>
+                <rect x="27" y="32" width="41" height="21" rx="2" fill="#6495ED"/>
+                <g stroke="#1E90FF" stroke-width="1" fill="none">
+                  <line x1="32" y1="35" x2="32" y2="50"/>
+                  <line x1="37" y1="35" x2="37" y2="50"/>
+                  <line x1="42" y1="35" x2="42" y2="50"/>
+                  <line x1="47" y1="35" x2="47" y2="50"/>
+                  <line x1="52" y1="35" x2="52" y2="50"/>
+                  <line x1="57" y1="35" x2="57" y2="50"/>
+                  <line x1="62" y1="35" x2="62" y2="50"/>
+                  <line x1="29" y1="38" x2="66" y2="38"/>
+                  <line x1="29" y1="42" x2="66" y2="42"/>
+                  <line x1="29" y1="46" x2="66" y2="46"/>
+                </g>
+                <rect x="70" y="25" width="3" height="15" fill="#FF6347"/>
+                <rect x="68" y="23" width="7" height="3" rx="1" fill="#FF6347"/>
+                <circle cx="35" cy="62" r="6" fill="#696969" stroke="#2F4F4F" stroke-width="2"/>
+                <circle cx="60" cy="62" r="6" fill="#696969" stroke="#2F4F4F" stroke-width="2"/>
+                <rect x="20" y="15" width="8" height="5" fill="#FF0000"/>
+                <rect x="30" y="18" width="6" height="4" fill="#FFD700"/>
+                <rect x="38" y="16" width="7" height="4" fill="#FF69B4"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Online Shopping</h3>
+            <p class="service-description">A small river named Duden flows by their place.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="service-card text-center">
+            <div class="service-icon">
+              <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="30" width="70" height="40" rx="5" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+                <rect x="22" y="40" width="12" height="10" rx="2" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+                <g stroke="#808080" stroke-width="0.5" fill="none">
+                  <line x1="24" y1="42" x2="32" y2="42"/>
+                  <line x1="24" y1="44" x2="32" y2="44"/>
+                  <line x1="24" y1="46" x2="32" y2="46"/>
+                  <line x1="24" y1="48" x2="32" y2="48"/>
+                </g>
+                <g fill="#B8860B">
+                  <circle cx="45" cy="45" r="1"/>
+                  <circle cx="49" cy="45" r="1"/>
+                  <circle cx="53" cy="45" r="1"/>
+                  <circle cx="57" cy="45" r="1"/>
+                  <circle cx="61" cy="45" r="1"/>
+                  <circle cx="65" cy="45" r="1"/>
+                  <circle cx="69" cy="45" r="1"/>
+                  <circle cx="73" cy="45" r="1"/>
+                </g>
+                <circle cx="65" cy="55" r="6" fill="#FF5F00" opacity="0.8"/>
+                <circle cx="73" cy="55" r="6" fill="#EB001B" opacity="0.8"/>
+                <rect x="15" y="52" width="70" height="4" fill="#2F4F4F"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Credit / Debit Cards</h3>
+            <p class="service-description">A small river named Duden flows by their place.</p>
+          </div>
+        </div>
+      </div>
+<div class="row align-items-center mt-5" data-aos="fade-up">
+        <div class="col-lg-6">
+          <div class="amortization-image">  
+            <img src="imgs/about_2.jpg" alt="" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="amortization-content">
+            <h2 class="amortization-title">Amortization Computation</h2>
+            <p class="amortization-description">A small river named Duden flows by their place.</p>
+            <ul class="amortization-list">
+              <li><i class="bi bi-check"></i>Officia quaerat eaque neque</li>
+              <li><i class="bi bi-check"></i>Lorem ipsum dolor sit amet</li>
+              <li><i class="bi bi-check"></i>Consectetur adipisicing elit</li>
+            </ul>
+            <form class="amortization-form" action="#" method="POST">
+              <input type="email" name="email" class="amortization-input" placeholder="Enter your email" required>
+              <button type="submit" class="amortization-button">Submit Email</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+<section class="about-section" id="about" data-aos="fade-right">
+  <div class="container">
+    <div class="row justify-content-center text-center" data-aos="fade-right">
+      <h2 class="about-title">About Us</h2>
+      <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="about-image-container">
+          <img src="imgs/hero_1.jpg" alt="About Us" class="about-image">
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="about-text-content">
+          <h3>We Solve Your Financial Problem</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="meet-team-section" id="team" data-aos="fade-up">
+  <div class="container">
+    <div class="section-title">
+      <h2>Meet Team</h2>
+       <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+
+      </div>
+      <div class="team-grid" data-aos="fade-left">
+        <div class="team-member">
+          <div class="team-image-container">
+            <img src="imgs/person_5.jpg" alt="" class="team-image">
+            <div class="team-icons">
+              <a href="#" class="team-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Kaira Spencer</h3>
+            <p class="team-position">Finance Manager</p>
+          </div>
+        </div>
+         <div class="team-member">
+          <div class="team-image-container">
+            <img src="imgs/person_1.jpg" alt="" class="team-image">
+            <div class="team-icons">
+              <a href="#" class="team-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Dave Simpson</h3>
+            <p class="team-position">Marketing Manager</p>
+          </div>
+        </div>
+         <div class="team-member">
+          <div class="team-image-container">
+            <img src="imgs/person_2.jpg" alt="" class="team-image">
+            <div class="team-icons">
+              <a href="#" class="team-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Ben Thompson</h3>
+            <p class="team-position">Accountant</p>
+          </div>
+        </div>
+         <div class="team-member">
+          <div class="team-image-container">
+            <img src="imgs/person_3.jpg" alt="" class="team-image">
+            <div class="team-icons">
+              <a href="#" class="team-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Kyla Stewart</h3>
+            <p class="team-position">Accountant</p>
+          </div>
+        </div>
+         <div class="team-member">
+          <div class="team-image-container">
+            <img src="imgs/person_4.jpg" alt="" class="team-image">
+            <div class="team-icons">
+              <a href="#" class="team-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Kaiara Spencer</h3>
+            <p class="team-position">Accountant</p>
+          </div>
+        </div>
+         <div class="team-member">
+          <div class="team-image-container">
+            <img src="imgs/person_6.jpg" alt="" class="team-image">
+            <div class="team-icons">
+              <a href="#" class="team-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Dave Simpson</h3>
+            <p class="team-position">Bank Teller</p>
+          </div>
+        </div>
+         <div class="team-member">
+          <div class="team-image-container">
+            <img src="imgs/person_7.jpg" alt="" class="team-image">
+            <div class="team-icons">
+              <a href="#" class="team-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Ben Thompson</h3>
+            <p class="team-position">Bank Teller</p>
+          </div>
+        </div>
+         <div class="team-member">
+          <div class="team-image-container">
+            <img src="imgs/person_8.jpg" alt="" class="team-image">
+            <div class="team-icons">
+              <a href="#" class="team-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Chris Stewart</h3>
+            <p class="team-position">Bank Teller</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </section>
+ <section class="gallery-section" id="gallery">
+      <div class="container text-center" data-aos="fade-up">
+        <div class="gallery-title">
+          <h2>Gallery</h2>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="gallery-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-events">Events</li>
+              <li data-filter=".filter-party">Party</li>
+              <li data-filter=".filter-holiday">Holidays</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row gallery-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 gallery-item filter-events">
+            <div class="gallery-wrap">
+              <img src="imgs/slide_1.jpg" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <div class="gallery-links">
+                  <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 gallery-item filter-events">
+            <div class="gallery-wrap">
+              <img src="imgs/img_2.jpg" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <div class="gallery-links">
+                  <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 gallery-item filter-events">
+            <div class="gallery-wrap">
+              <img src="imgs/img_1.jpg" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <div class="gallery-links">
+                  <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+               <div class="col-lg-4 col-md-6 gallery-item filter-events">
+            <div class="gallery-wrap">
+              <img src="imgs/person_3.jpg" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <div class="gallery-links">
+                  <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-item filter-party">
+         <div class="gallery-wrap">
+          <img src="imgs/slide_2.jpg" class="img-fluid" alt="App 1">
+          <div class="gallery-info">
+            <div class="gallery-links">
+              <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+         </div>
+         </div>
+          <div class="col-lg-4 col-md-6 gallery-item filter-party">
+         <div class="gallery-wrap">
+          <img src="imgs/img_3.jpg" class="img-fluid" alt="App 1">
+          <div class="gallery-info">
+            <div class="gallery-links">
+              <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+         </div>
+         </div>
+                <div class="col-lg-4 col-md-6 gallery-item filter-party">
+         <div class="gallery-wrap">
+          <img src="imgs/hero_1.jpg" class="img-fluid" alt="App 1">
+          <div class="gallery-info">
+            <div class="gallery-links">
+              <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+         </div>
+         </div>
+           <div class="col-lg-4 col-md-6 gallery-item filter-party">
+         <div class="gallery-wrap">
+          <img src="imgs/img_4.jpg" class="img-fluid" alt="App 1">
+          <div class="gallery-info">
+            <div class="gallery-links">
+              <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+         </div>
+         </div>
+       <div class="col-lg-4 col-md-6 gallery-item filter-holiday">
+        <div class="gallery-wrap">
+          <img src="imgs/slide_3.jpg" class="img-fluid" alt="App 1">
+          <div class="gallery-info">
+            <div class="gallery-links">
+              <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-lg-4 col-md-6 gallery-item filter-holiday">
+        <div class="gallery-wrap">
+          <img src="imgs/img_5.jpg" class="img-fluid" alt="App 1">
+          <div class="gallery-info">
+            <div class="gallery-links">
+              <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-lg-4 col-md-6 gallery-item filter-holiday">
+        <div class="gallery-wrap">
+          <img src="imgs/person_5.jpg" class="img-fluid" alt="App 1">
+          <div class="gallery-info">
+            <div class="gallery-links">
+              <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="col-lg-4 col-md-6 gallery-item filter-holiday">
+        <div class="gallery-wrap">
+          <img src="imgs/img_5.jpg" class="img-fluid" alt="App 1">
+          <div class="gallery-info">
+            <div class="gallery-links">
+              <a href="#" title="More Details"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+  <section class="work-section" data-aos="fade-right">
+        <h2 class="work-title">How It Works</h2>
+        <p class="work-description">
+            A small river named Duden flows by their place and supplies it with the necessary regalia.
+        </p>
+
+        <div class="slideshow-container" data-aos="fade-up">
+            <div class="slide active">
+                <div class="image-section">
+                    <img src="imgs/slide_2.jpg" alt="Online Applications" class="slide-image">
+                    <div class="controls">
+                        <button class="prev" onclick="changeSlide(-1)">←</button>
+                        <button class="next" onclick="changeSlide(1)">→</button>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h3 class="step-title">01. Online Applications</h3>
+                    <p class="step-description">
+                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                    </p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="image-section">
+                    <img src="imgs/slide_1.jpg" alt="Get Approval" class="slide-image">
+                    <div class="controls">
+                        <button class="prev" onclick="changeSlide(-1)">←</button>
+                        <button class="next" onclick="changeSlide(1)">→</button>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h3 class="step-title">02. Get an approval</h3>
+                    <p class="step-description">
+                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                    </p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="image-section">
+                    <img src="imgs/hero_2.jpg" alt="Card Delivery" class="slide-image">
+                    <div class="controls">
+                        <button class="prev" onclick="changeSlide(-1)">←</button>
+                        <button class="next" onclick="changeSlide(1)">→</button>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h3 class="step-title">03. Card delivery</h3>
+                    <p class="step-description">
+                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                    </p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="our-services-section py-5" id="services" data-aos="fade-left">
+  <div class="container">
+    <div class="our-services-section-title mb-5" data-aos="fade-up">
+      <h2>Our Services</h2>
+    </div>
+    <div class="row" data-aos="fade-right">
+      <div class="col-lg-4 col-md-6 mb-5 d-flex">
+        <div class="service-item w-100">
+          <div class="services-img-wrap mb-4">
+            <img src="imgs/001-wallet.svg" alt="Business Consulting">
+          </div>
+          <h3 class="service-heading mb-3">Business Consulting</h3>
+          <p class="services para mb-3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <a href="#" class="btn learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5 d-flex">
+        <div class="service-item w-100">
+          <div class="services-img-wrap mb-4">
+            <img src="imgs/006-credit-card.svg" alt="Credit Card">
+          </div>
+          <h3 class="service-heading mb-3">Credit Card</h3>
+          <p class="services para mb-3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <a href="#" class="btn learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5 d-flex">
+        <div class="service-item w-100">
+          <div class="services-img-wrap mb-4">
+            <img src="imgs/002-rich.svg" alt="Income Monitoring">
+          </div>
+          <h3 class="service-heading mb-3">Income Monitoring</h3>
+          <p class="services para mb-3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <a href="#" class="btn learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5 d-flex">
+        <div class="service-item w-100">
+          <div class="services-img-wrap mb-4">
+            <img src="imgs/003-notes.svg" alt="Insurance Consulting">
+          </div>
+          <h3 class="service-heading mb-3">Insurance Consulting</h3>
+          <p class="services para mb-3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <a href="#" class="btn learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5 d-flex">
+        <div class="service-item w-100">
+          <div class="services-img-wrap mb-4">
+            <img src="imgs/004-cart.svg" alt="Financial Investment">
+          </div>
+          <h3 class="service-heading mb-3">Financial Investment</h3>
+          <p class="services para mb-3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <a href="#" class="btn learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5 d-flex">
+        <div class="service-item w-100">
+          <div class="services-img-wrap mb-4">
+            <img src="imgs/005-megaphone.svg" alt="Financial Management">
+          </div>
+          <h3 class="service-heading mb-3">Financial Management</h3>
+          <p class="services para mb-3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <a href="#" class="btn learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="testimonial-section" id="testimonials" data-aos="fade-up">
+      <div class="container" >
+        <h2 class="testimonial-title">Happy Customers</h2>
+        <div class="testimonial-container">
+          <div class="testimonial-slide active">
+            <p class="testimonial-quote">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <div class="testimonial-author">
+              <img src="imgs/person_3.jpg" alt="" class="author-img">
+              <span class="author-name">John Smith</span>
+            </div>
+          </div>
+                    <div class="testimonial-slide ">
+            <p class="testimonial-quote">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.””</p>
+            <div class="testimonial-author">
+              <img src="imgs/person_4.jpg" alt="" class="author-img">
+              <span class="author-name">Christine Aguilar</span>
+            </div>
+          </div>
+                    <div class="testimonial-slide ">
+            <p class="testimonial-quote">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+            <div class="testimonial-author">
+              <img src="imgs/person_5.jpg" alt="" class="author-img">
+              <span class="author-name">Robert Spears</span>
+            </div>
+          </div>
+                    <div class="testimonial-slide ">
+            <p class="testimonial-quote">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen.</p>
+            <div class="testimonial-author">
+              <img src="imgs/person_6.jpg" alt="" class="author-img">
+              <span class="author-name">Bruce Rogers</span>
+            </div>
+          </div>
+          <div class="testimonial-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+   <section class="pricing-section" id="pricing">
+        <div class="container" data-aos="fade-right">
+            <div class="pricing-section-title">
+                <h2>Pricing</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <h2 class="pri-title">Basic</h2>
+                        <div class="price-wrapper">
+                            <span class="pri-rate">$47</span>
+                            <span class="pri-period">/ year</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Officia quaerat eaque neque
+                            </li>
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Possimus aut consequuntur incidunt
+                            </li>
+                            <li class="feature-item unchecked">
+                                <i class="check-icon"></i>
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="feature-item unchecked">
+                                <i class="check-icon"></i>
+                                Consectetur adipisicing elit
+                            </li>
+                            <li class="feature-item unchecked">
+                                <i class="check-icon"></i>
+                                Dolorum esse odio quas architecto sint
+                            </li>
+                        </ul>
+                        <button class="btn-buy-now basic-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-card premium-card">
+                        <h2 class="pri-title">Premium</h2>
+                        <div class="price-wrapper">
+                            <span class="pri-rate">$200</span>
+                            <span class="pri-period">/ year</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Officia quaerat eaque neque
+                            </li>
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Possimus aut consequuntur incidunt
+                            </li>
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Consectetur adipisicing elit
+                            </li>
+                            <li class="feature-item unchecked">
+                                <i class="check-icon"></i>
+                                Dolorum esse odio quas architecto sint
+                            </li>
+                        </ul>
+                        <button class="btn-buy-now premium-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <h2 class="pri-title">Professional</h2>
+                        <div class="price-wrapper">
+                            <span class="pri-rate">$750</span>
+                            <span class="pri-period">/ year</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Officia quaerat eaque neque
+                            </li>
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Possimus aut consequuntur incidunt
+                            </li>
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Consectetur adipisicing elit
+                            </li>
+                            <li class="feature-item checked">
+                                <i class="check-icon"></i>
+                                Dolorum esse odio quas architecto sint
+                            </li>
+                        </ul>
+                        <button class="btn-buy-now professional-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section class="faq-section" id="faq">
+        <div class="container" data-aos="fade-up">
+            <div class="faq-section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="masonary-layout">
+              <div class="faq-item">
+                <h3 class="faq-question">Can I accept both Paypal and Stripe?</h3>
+                <p class="faq-answer">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-question">What available is refund period?</h3>
+                <p class="faq-answer">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-question">Can I accept both Paypal and Stripe?</h3>
+                <p class="faq-answer">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-question">What available is refund period?</h3>
+                <p class="faq-answer">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-question">Where are you from?</h3>
+                <p class="faq-answer">Voluptatum nobis obcaecati perferendis dolor totam unde dolores quod maxime corporis officia et. Distinctio assumenda minima maiores.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-question">What is your opening time?</h3>
+                <p class="faq-answer">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-question">Can I accept both Paypal and Stripe?</h3>
+                <p class="faq-answer">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-question">What available is refund period?</h3>
+                <p class="faq-answer">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+            </div>
+        </div>
+   </section>
+<section class="bank-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="bank-image text-center">
+          <img src="imgs/hero_1.jpg" alt="Bank Service" class="img-fluid rounded" style="max-width:100%;height:auto;">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bank-services">
+          <div class="bank-service d-flex mb-5">
+            <div class="bank-icon flex-shrink-0 me-4">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div>
+              <h3 class="bank-title mb-2">Bank Loan</h3>
+              <p class="bank-desc mb-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <a href="#" class="bank-link">Learn More</a>
+            </div>
+          </div>
+          <div class="bank-service d-flex">
+            <div class="bank-icon flex-shrink-0 me-4">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div>
+              <h3 class="bank-title mb-2">Banking Consultation</h3>
+              <p class="bank-desc mb-3">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <a href="#" class="bank-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="blog" id="blog">
+      <div class="container" data-aos="fade-up">
+        <div class="blog-content">
+          <h2 class="blog-title">
+            Our Blog
+          </h2>
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-left">
+              <div class="blog-wrap">
+                <div class="blog-img">
+                  <img src="imgs/person_5.jpg" alt="" class="blog-pic">
+                </div>
+                <div class="blog-content-card">
+                  <h4 class="blog-desc">A Basic Guide to Starting a Franchise in the Philippines</h4>
+                  <div class="blog-meta">
+                    <span class="blogger-name">Ham Brook</span>
+                    <span class="meta-separator">•</span>
+                    <span class="blog-date">Jan 18, 2019</span>
+                    <span class="meta-separator">•</span>
+                    <a href="#" class="blog-category">News</a>
+                  </div>
+                  <p class="blog-expert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+                  <a href="#" class="btn learn-more">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+             <div class="col-lg-4 col-md-6" data-aos="fade-right">
+              <div class="blog-wrap">
+                <div class="blog-img">
+                  <img src="imgs/person_6.jpg" alt="" class="blog-pic">
+                </div>
+                <div class="blog-content-card">
+                  <h4 class="blog-desc">A Basic Guide to Starting a Franchise in the Philippines</h4>
+                  <div class="blog-meta">
+                    <span class="blogger-name">James Phelps</span>
+                    <span class="meta-separator">•</span>
+                    <span class="blog-date">Jan 18, 2019</span>
+                    <span class="meta-separator">•</span>
+                    <a href="#" class="blog-category">News</a>
+                  </div>
+                  <p class="blog-expert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+                  <a href="#" class="btn learn-more">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+             <div class="col-lg-4 col-md-6" data-aos="fade-left">
+              <div class="blog-wrap">
+                <div class="blog-img">
+                  <img src="imgs/person_7.jpg" alt="" class="blog-pic">
+                </div>
+                <div class="blog-content-card">
+                  <h4 class="blog-desc">A Basic Guide to Starting a Franchise in the Philippines</h4>
+                  <div class="blog-meta">
+                    <span class="blogger-name">Ham Brook</span>
+                    <span class="meta-separator">•</span>
+                    <span class="blog-date">Jan 18, 2019</span>
+                    <span class="meta-separator">•</span>
+                    <a href="#" class="blog-category">News</a>
+                  </div>
+                  <p class="blog-expert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+                  <a href="#" class="btn learn-more">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="contact" id="contact">
+        <div class="container" data-aos="fade-in-up">
+            <div class="contact-content">
+                <h2 class="contact-title">Contact Us</h2>
+            </div>
+            
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3 class="icon-desc">203 Fake St. Mountain View, San Francisco, California, USA</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                            <h3 class="icon-desc">+1 232 3235 324</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                            <h3 class="icon-desc">youremail@domain.com</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form Section -->
+            <div class="contact-form-section" data-aos="fade-up">
+                <h3 class="form-title">Contact Form</h3>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your first name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your last name">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Subject</label>
+                        <input type="text" class="form-control" placeholder="Enter subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control textarea" placeholder="Enter your message here..."></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="brand">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-section">
+                <h4>Quick Links</h4>
+               <ul class="footer-links">
+                <li><a href="#">Terms</a></li>
+                 <li><a href="#">Policy</a></li>
+                  <li><a href="#about">About Us</a></li>
+                   <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+               </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="footer-icons">
+                  <a href="#" class="footer-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </div>
+                <div class="footer-icons">
+                  <a href="#" class="footer-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="footer-icons">
+                  <a href="#" class="footer-icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+                 <div class="footer-icons">
+                  <a href="#" class="footer-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-section">
+                <h4>Subscribe News Letter</h4>
+                <div class="newsletter-section">
+                  <div class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter Email">
+                    <button type="submit" class="newsletter-btn">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+         <p> Copyright ©2025 All rights reserved | This template is made with <span class="heart">❤</span> by <a href="#">Colorlib</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
