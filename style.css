@@ -175,23 +175,38 @@ body {
   gap: 5px;
 }
 
+.carousel-indicators {
+  position: absolute;
+  bottom: 12rem;               /* distance from bottom */
+  left: 4%;                  /* center start point */
+  transform: translateX(-50%);/* center shift */
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  width: auto;                /* shrink‑to‑fit content */
+  z-index: 10;
+}
+
+/* 2. Each dot */
 .carousel-indicators button {
-  width: 10px ;
-  height: 8px;
+  flex: 0 1 auto;             /* no forced expansion, but can shrink */
+  width: 0.8rem;              /* base size */
+  height: 0.8rem;
+  border: none;
   border-radius: 50%;
-  border: #6c757d;
-  background-color: rgba(255, 255, 255, 0.5);
-  transition: background-color 0.3s;
-  opacity: 0.2;
-  transition: opacity 0.3s;
+  background: rgba(255,255,255,0.5);
+  opacity: 0.5;
+  transition: all 0.3s;
   cursor: pointer;
 }
 
+/* 3. Active dot expands */
 .carousel-indicators button.active {
-  background-color: #fff;
+  width: 1.8rem;              /* wider pill shape */
+  border-radius: 0.9rem;
+  background: #fff;
   opacity: 1;
-  width: 25px;
-  border-radius: 50px;
 }
 
 .scroll-indicator {
@@ -930,28 +945,134 @@ body {
 .controls {
   position: absolute;
   top: 50%;
-  right: -50px;
+  right: -30px;
   transform: translateY(-50%);
   background: #ff7f00;
-  width: 120px;
-  height: 60px;
+  width: 100px;
+  height: 50px;
   border-radius: 8px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  box-shadow: 0 4px 15px rgba(255, 127, 0, 0.3);
+  justify-content: center; /* Always center */
+  gap: 5px; /* Space between buttons */
+  box-shadow: 0 4px 15px rgba(255,127,0,0.3);
   z-index: 10;
+  transition: all 0.3s ease;
 }
 
 .controls button {
   background: transparent;
   border: none;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 8px;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Fixed width for consistency */
+  height: 35px; /* Fixed height for consistency */
+}
+
+.controls button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.controls button:active {
+  transform: scale(0.95);
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  .image-section {
+    padding: 15px;
+  }
+  
+  .controls {
+    right: -45px;
+    width: 80px;
+    height: 45px;
+    gap: 3px;
+  }
+  
+  .controls button {
+    font-size: 1.1rem;
+    width: 35px;
+    height: 30px;
+    padding: 6px;
+  }
+  
+  .slide-image {
+    max-height: 55vh;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .image-section {
+    padding: 10px;
+  }
+  
+  .controls {
+    right: -105px; /* Ensure it stays in viewport */
+    width: 70px;
+    height: 40px;
+    gap: 2px;
+    justify-content: center; /* Force center alignment */
+  }
+  
+  .controls button {
+    font-size: 1rem;
+    width: 30px;
+    height: 28px;
+    padding: 4px;
+  }
+  
+  .slide-image {
+    max-height: 50vh;
+    border-radius: 8px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 380px) {
+  .controls {
+    right: -30px;
+    width: 60px;
+    height: 35px;
+    gap: 1px;
+  }
+  
+  .controls button {
+    font-size: 0.9rem;
+    width: 28px;
+    height: 25px;
+    padding: 3px;
+  }
+}
+
+/* Extra small screens - move to bottom */
+@media (max-width: 320px) {
+  .controls {
+    position: absolute;
+    top: auto;
+    bottom: -50px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 80px;
+    height: 35px;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .controls button {
+    font-size: 1rem;
+    width: 35px;
+    height: 25px;
+  }
 }
 
 /* Content section */
