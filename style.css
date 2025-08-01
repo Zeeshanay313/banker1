@@ -162,12 +162,12 @@ body {
 /* 1. Carousel dots wrapper */
 .carousel-indicators {
   position: absolute;
-  bottom: 20rem !important;               /* distance from bottom */
+  bottom: 50rem !important;               /* distance from bottom */
   transform: translateX(-50%);/* center shift */
   display: flex;
   gap: 0.5rem;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 5px;
   width: auto;                /* shrink‑to‑fit content */
   z-index: 10;
 }
