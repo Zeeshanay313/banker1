@@ -163,12 +163,11 @@ body {
 .carousel-indicators {
   position: absolute;
   bottom: 5rem;               /* distance from bottom */
-                  /* center start point */
   transform: translateX(-50%);/* center shift */
   display: flex;
   gap: 0.5rem;
   padding: 0;
-  margin: 0;
+  margin: 10px;
   width: auto;                /* shrink‑to‑fit content */
   z-index: 10;
 }
