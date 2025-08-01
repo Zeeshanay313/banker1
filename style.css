@@ -162,7 +162,7 @@ body {
 /* 1. Carousel dots wrapper */
 .carousel-indicators {
   position: absolute;
-  bottom: 8rem;               /* distance from bottom */
+  bottom: 10rem !important;               /* distance from bottom */
   transform: translateX(-50%);/* center shift */
   display: flex;
   gap: 0.5rem;
