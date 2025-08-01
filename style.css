@@ -159,22 +159,7 @@ body {
   }
 }
 
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-right: 30%;
-  margin-bottom: 10rem !important;
-  margin-left: 46% !important;
-  width: 110px ;
-  gap: 5px;
-}
-
+/* 1. Carousel dots wrapper */
 .carousel-indicators {
   position: absolute;
   bottom: 12rem;               /* distance from bottom */
@@ -209,21 +194,17 @@ body {
   opacity: 1;
 }
 
+/* 4. Scroll indicator */
 .scroll-indicator {
   position: absolute;
-  bottom: 30px;
+  bottom: 5vh;                /* viewport‑based offset */
   left: 50%;
   transform: translateX(-50%);
-  width: 24px;
-  height: 52px;
+  width: clamp(1.5rem, 5vw, 2.5rem);
+  aspect-ratio: 1 / 2;
+  opacity: 0.8;
   cursor: pointer;
   z-index: 10;
-  opacity: 0.8;
-}
-
-.scroll-indicator svg {
-  width: 100%;
-  height: 100%;
 }
 
 .scroll-indicator:hover {
@@ -231,18 +212,15 @@ body {
 }
 
 .scroll-indicator .scroll-dot {
+  display: block;
+  width: 20%;
+  margin: 0 auto;
   animation: scroll-dot-move 1.5s infinite ease-in-out;
 }
 
 @keyframes scroll-dot-move {
-  0%, 100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(10px);
-    opacity: 0.4;
-  }
+  0%,100% { transform: translateY(0); opacity: 1; }
+  50%     { transform: translateY(10px); opacity: 0.4; }
 }
 
 /* ===== SERVICES SECTION ===== */
@@ -927,21 +905,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px; /* Add padding to accommodate controls */
 }
 
+/* Slide image */
 .slide-image {
   width: 100%;
   max-width: 500px;
-  height: 400px;
+  height: auto;
+  max-height: 60vh;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   opacity: 0;
   transform: translateX(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out,
+              transform 0.5s ease-in-out;
 }
 
-/* Navigation arrows */
+/* Navigation arrows container - Default for desktop */
 .controls {
   position: absolute;
   top: 50%;
