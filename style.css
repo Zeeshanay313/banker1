@@ -167,7 +167,7 @@ body {
   display: flex;
   gap: 0.5rem;
   padding: 0;
-  margin: 8px;
+  margin: 18px;
   width: auto;                /* shrink‑to‑fit content */
   z-index: 10;
 }
